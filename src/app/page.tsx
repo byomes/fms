@@ -49,7 +49,7 @@ export default function HomePage() {
                 alt="GODFIDENCE cover"
                 width={480}
                 height={480}
-                className="w-full max-w-sm shadow-2xl"
+                className="w-full max-w-sm"
               />
             </div>
             <div>
