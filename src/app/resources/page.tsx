@@ -46,17 +46,16 @@ export default function ResourcesPage() {
                 className="bg-navy-800 border border-navy-700 flex flex-col"
               >
                 {resource.image ? (
-                  <div className="aspect-square w-full overflow-hidden">
+                  <div className="relative aspect-[3/4] w-full bg-navy-800 p-4">
                     <Image
                       src={resource.image}
                       alt={resource.title}
-                      width={400}
-                      height={400}
-                      className="w-full h-full object-cover"
+                      fill
+                      className="object-contain p-4"
                     />
                   </div>
                 ) : (
-                  <div className="aspect-square w-full bg-navy-700 flex items-center justify-center p-8">
+                  <div className="aspect-[3/4] w-full bg-navy-700 flex items-center justify-center p-8">
                     <p className="font-display text-2xl uppercase tracking-wider text-white text-center">
                       {resource.title}
                     </p>
