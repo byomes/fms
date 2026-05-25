@@ -10,12 +10,16 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="min-h-screen flex items-center justify-center bg-white pt-20">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center py-24">
-          <h1 className="font-display text-6xl sm:text-7xl lg:text-8xl uppercase tracking-wider text-blue-900 mb-6">
+      <section
+        className="relative min-h-screen flex items-center justify-center bg-cover bg-center pt-20"
+        style={{ backgroundImage: "url('/images/hero.jpg')" }}
+      >
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-8 text-center py-24">
+          <h1 className="font-display text-6xl sm:text-7xl lg:text-8xl uppercase tracking-wider text-white mb-6">
             Faith Makes Sense
           </h1>
-          <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+          <p className="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
             Apologetics for the local church. Resources, training, and tools to help you learn, defend, and share your faith.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -27,7 +31,7 @@ export default function HomePage() {
             </Link>
             <Link
               href="/partner"
-              className="px-8 py-3 border border-blue-700 text-blue-700 font-sans font-medium text-sm uppercase tracking-wide hover:bg-blue-700 hover:text-white transition-colors duration-200"
+              className="px-8 py-3 border border-white text-white font-sans font-medium text-sm uppercase tracking-wide hover:bg-white hover:text-blue-900 transition-colors duration-200"
             >
               Become a Partner
             </Link>
