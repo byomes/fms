@@ -49,12 +49,6 @@ export default function Footer() {
             >
               info@faithmakessense.com
             </a>
-            <a
-              href="mailto:bill@faithmakessense.com"
-              className="hover:text-white transition-colors duration-200"
-            >
-              bill@faithmakessense.com
-            </a>
           </div>
 
           <p className="text-xs text-white/40">
