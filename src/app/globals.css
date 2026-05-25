@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  @apply bg-navy-900 text-white antialiased;
+  @apply bg-white text-gray-900 antialiased;
 }
 
 ::-webkit-scrollbar {
@@ -15,13 +15,13 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-navy-950;
+  @apply bg-gray-100;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-navy-600 rounded-full;
+  @apply bg-gray-200 rounded-full;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-gold-500;
+  @apply bg-blue-600;
 }

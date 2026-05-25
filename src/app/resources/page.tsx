@@ -28,13 +28,13 @@ const resources = [
 export default function ResourcesPage() {
   return (
     <div className="pt-20">
-      <section className="bg-navy-900 py-20 lg:py-28">
+      <section className="bg-gray-50 py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h1 className="font-display text-5xl lg:text-6xl uppercase tracking-wider text-white mb-4">
+            <h1 className="font-display text-5xl lg:text-6xl uppercase tracking-wider text-blue-900 mb-4">
               Resources
             </h1>
-            <p className="text-slate-light text-lg">
+            <p className="text-gray-600 text-lg">
               Everything here is free. No signup required. Download, share, teach.
             </p>
           </div>
@@ -43,10 +43,10 @@ export default function ResourcesPage() {
             {resources.map((resource) => (
               <div
                 key={resource.pdf}
-                className="bg-navy-800 border border-navy-700 flex flex-col"
+                className="bg-white border border-gray-200 flex flex-col"
               >
                 {resource.image ? (
-                  <div className="relative aspect-[3/4] w-full bg-navy-800 p-4">
+                  <div className="relative aspect-[3/4] w-full bg-gray-50 p-4">
                     <Image
                       src={resource.image}
                       alt={resource.title}
@@ -55,20 +55,20 @@ export default function ResourcesPage() {
                     />
                   </div>
                 ) : (
-                  <div className="aspect-[3/4] w-full bg-navy-700 flex items-center justify-center p-8">
-                    <p className="font-display text-2xl uppercase tracking-wider text-white text-center">
+                  <div className="aspect-[3/4] w-full bg-gray-100 flex items-center justify-center p-8">
+                    <p className="font-display text-2xl uppercase tracking-wider text-blue-900 text-center">
                       {resource.title}
                     </p>
                   </div>
                 )}
                 <div className="p-5 flex flex-col flex-1 gap-4">
-                  <h2 className="font-sans font-medium text-white text-base leading-tight">
+                  <h2 className="font-sans font-medium text-blue-900 text-base leading-tight">
                     {resource.title}
                   </h2>
                   <a
                     href={`/resources/${resource.pdf}`}
                     download
-                    className="mt-auto inline-block text-center px-6 py-2 bg-gold-500 text-navy-950 font-sans font-medium text-sm uppercase tracking-wide hover:bg-gold-400 transition-colors duration-200"
+                    className="mt-auto inline-block text-center px-6 py-2 bg-blue-700 text-white font-sans font-medium text-sm uppercase tracking-wide hover:bg-blue-800 transition-colors duration-200"
                   >
                     Download
                   </a>
