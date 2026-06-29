@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'About',
   description:
-    'Pastor, apologist, and founder of Faith Makes Sense. Bill Yomes on why apologetics matters for the local church.',
+    'Pastor, apologist, and founder of Faith Makes Sense. Dr. Bill Yomes on why apologetics matters for the local church.',
 }
 
 export default function AboutPage() {
@@ -17,7 +17,7 @@ export default function AboutPage() {
             <div className="flex justify-center lg:justify-start">
               <Image
                 src="/images/headshot.png"
-                alt="Bill Yomes"
+                alt="Dr. Bill Yomes"
                 width={480}
                 height={480}
                 className="w-full max-w-sm shadow-2xl object-cover"
@@ -59,10 +59,10 @@ export default function AboutPage() {
 
             <div>
               <h2 className="font-display text-3xl uppercase tracking-wider text-blue-700 mb-4">
-                About Bill
+                About Dr. Bill
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                Pastor, apologist, and founder of Faith Makes Sense. Based in Wilmington, DE. Bill is available for speaking at churches, conferences, and events — bringing clear, compelling apologetics to congregations and leaders who want to be better equipped.
+                Pastor, apologist, and founder of Faith Makes Sense. Based in Wilmington, DE. Dr. Bill is available for speaking at churches, conferences, and events — bringing clear, compelling apologetics to congregations and leaders who want to be better equipped.
               </p>
             </div>
           </div>

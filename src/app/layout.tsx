@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   keywords: [
     'Christian apologetics',
     'Faith Makes Sense',
-    'Bill Yomes',
+    'Dr. Bill Yomes',
     'GODFIDENCE',
     'Adelphos Academy',
     'apologetics resources',

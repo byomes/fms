@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Speaking',
   description:
-    'Book Bill Yomes to speak at your church, conference, or apologetics event.',
+    'Book Dr. Bill Yomes to speak at your church, conference, or apologetics event.',
 }
 
 const topics = [
@@ -19,7 +19,7 @@ export default function SpeakingPage() {
       <section className="min-h-screen bg-white py-20 lg:py-28 flex items-center">
         <div className="max-w-3xl mx-auto px-6 lg:px-8 w-full">
           <h1 className="font-display text-5xl lg:text-6xl uppercase tracking-wider text-blue-900 mb-4">
-            Book Bill to Speak
+            Book Dr. Bill to Speak
           </h1>
           <p className="text-gray-600 text-lg mb-12">
             Available for churches, conferences, apologetics events, and pastor training.
