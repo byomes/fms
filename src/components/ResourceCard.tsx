@@ -32,7 +32,6 @@ export default function ResourceCard({ title, description, pdfPath, category }: 
         <p className="relative z-10 text-white font-bold text-base uppercase tracking-widest">
           {title}
         </p>
-        <p className="relative z-10 text-white/60 text-xs mt-1">from FAITH MAKES SENSE</p>
       </div>
       <div className="bg-white py-2 px-4 flex items-center justify-between">
         <span className="text-gray-600 text-xs">{description}</span>
