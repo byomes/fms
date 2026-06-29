@@ -66,7 +66,7 @@ export default function PartnerPage() {
               Upcoming Book
             </p>
             <h3 className="text-white font-bold text-lg mt-1">
-              Receive a signed copy of Dr. Bill's upcoming book, The Wrong Jesus.
+              Receive a signed copy of Dr. Bill&apos;s upcoming book, The Wrong Jesus.
             </h3>
             <p className="text-white/80 text-sm mt-2">
               Every new monthly partner receives a personally signed copy of Dr. Bill Yomes&apos;s book — a clear, compelling case for the real Jesus of Scripture.
