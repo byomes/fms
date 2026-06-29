@@ -63,10 +63,10 @@ export default function PartnerPage() {
 
           <div className="bg-[#1e3a5f] rounded-xl p-6 mt-6 max-w-xl">
             <p className="text-white/60 text-xs uppercase tracking-widest font-semibold">
-              Partner Gift
+              Upcoming Book
             </p>
             <h3 className="text-white font-bold text-lg mt-1">
-              Receive a Signed Copy of The Wrong Jesus
+              Receive a signed copy of Dr. Bill's upcoming book, The Wrong Jesus.
             </h3>
             <p className="text-white/80 text-sm mt-2">
               Every new monthly partner receives a personally signed copy of Dr. Bill Yomes&apos;s book — a clear, compelling case for the real Jesus of Scripture.
