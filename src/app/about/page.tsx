@@ -64,12 +64,6 @@ export default function AboutPage() {
               <p className="text-gray-600 text-lg leading-relaxed mb-6">
                 Pastor, apologist, and founder of Faith Makes Sense. Based in Wilmington, DE. Bill is available for speaking at churches, conferences, and events — bringing clear, compelling apologetics to congregations and leaders who want to be better equipped.
               </p>
-              <a
-                href="mailto:bill@faithmakessense.com"
-                className="text-blue-600 hover:text-blue-700 transition-colors duration-200 text-sm tracking-wide"
-              >
-                bill@faithmakessense.com
-              </a>
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter, Barlow_Condensed } from 'next/font/google'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import EmailPopup from '@/components/EmailPopup'
 import './globals.css'
 
 const inter = Inter({
@@ -49,6 +50,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main>{children}</main>
         <Footer />
+        <EmailPopup />
       </body>
     </html>
   )

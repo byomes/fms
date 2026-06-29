@@ -1,4 +1,7 @@
+'use client'
+
 import Link from 'next/link'
+import { useState } from 'react'
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -9,9 +12,65 @@ const navLinks = [
   { href: '/partner', label: 'Partner' },
 ]
 
+function FooterSignup() {
+  const [email, setEmail] = useState('')
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault()
+    setStatus('loading')
+    try {
+      const res = await fetch('https://watson.tail0243ff.ts.net/api/kit/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, tag: 'fms' }),
+      })
+      if (!res.ok) throw new Error()
+      setStatus('success')
+    } catch {
+      setStatus('error')
+    }
+  }
+
+  return (
+    <div className="bg-[#1e3a5f] py-6 px-6">
+      <div className="max-w-7xl mx-auto">
+        {status === 'success' ? (
+          <p className="text-white text-sm text-center">✓ You&apos;re subscribed.</p>
+        ) : (
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <p className="text-white text-sm">Get free apologetics resources in your inbox.</p>
+            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2 w-full sm:w-auto">
+              <input
+                type="email"
+                value={email}
+                onChange={e => setEmail(e.target.value)}
+                placeholder="Email address"
+                required
+                className="bg-white/10 border border-white/30 text-white placeholder-white/50 px-4 py-2 rounded-md text-sm focus:outline-none focus:ring-1 focus:ring-white w-full sm:w-64"
+              />
+              <button
+                type="submit"
+                disabled={status === 'loading'}
+                className="bg-white text-[#1e3a5f] font-semibold px-4 py-2 rounded-md text-sm hover:bg-blue-50 sm:ml-2 disabled:opacity-60"
+              >
+                {status === 'loading' ? 'Subscribing…' : 'Subscribe'}
+              </button>
+            </form>
+          </div>
+        )}
+        {status === 'error' && (
+          <p className="text-white/70 text-xs mt-2">Something went wrong.</p>
+        )}
+      </div>
+    </div>
+  )
+}
+
 export default function Footer() {
   return (
     <footer className="bg-blue-950 border-t border-blue-800">
+      <FooterSignup />
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
         <div className="flex flex-col items-center gap-6">
           <p className="font-display text-xl uppercase tracking-widest text-white">
@@ -42,17 +101,28 @@ export default function Footer() {
             )}
           </nav>
 
-          <div className="flex flex-col sm:flex-row gap-2 sm:gap-6 text-sm text-white/70 text-center">
+          <div className="flex flex-col sm:flex-row gap-2 sm:gap-6 text-sm text-white/70 text-center items-center">
             <a
               href="mailto:info@faithmakessense.com"
               className="hover:text-white transition-colors duration-200"
             >
               info@faithmakessense.com
             </a>
+            <a
+              href="https://www.facebook.com/FaithMakesSense/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors duration-200"
+              aria-label="Facebook"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
+              </svg>
+            </a>
           </div>
 
           <p className="text-xs text-white/40">
-            © 2025 Faith Makes Sense
+            © 2026 Faith Makes Sense
           </p>
         </div>
       </div>

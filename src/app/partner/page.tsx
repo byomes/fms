@@ -52,23 +52,46 @@ export default function PartnerPage() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* Closing CTA */}
-      <section className="bg-gray-50 py-20 lg:py-28">
-        <div className="max-w-2xl mx-auto px-6 lg:px-8 text-center">
-          <p className="text-gray-600 text-lg leading-relaxed mb-10">
-            Every gift, regardless of size, keeps the library open, the courses running, and the training materials flowing.
+          {/* Monthly Partner CTA */}
+          <h2 className="text-gray-900 font-bold text-xl mt-12">
+            Become a Monthly Partner
+          </h2>
+          <p className="text-gray-600 mt-2 max-w-xl">
+            Monthly partners make the mission sustainable. Every recurring gift — regardless of size — keeps the library free, the courses running, and the training materials flowing to pastors in Uganda.
           </p>
-          <a
-            href="https://givebutter.com/fms1"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block px-10 py-4 bg-blue-700 text-white font-sans font-medium text-sm uppercase tracking-wide hover:bg-blue-800 transition-colors duration-200"
-          >
-            Support Faith Makes Sense
-          </a>
+
+          <div className="bg-[#1e3a5f] rounded-xl p-6 mt-6 max-w-xl">
+            <p className="text-white/60 text-xs uppercase tracking-widest font-semibold">
+              Partner Gift
+            </p>
+            <h3 className="text-white font-bold text-lg mt-1">
+              Receive a Signed Copy of The Wrong Jesus
+            </h3>
+            <p className="text-white/80 text-sm mt-2">
+              Every new monthly partner receives a personally signed copy of Dr. Bill Yomes&apos;s book — a clear, compelling case for the real Jesus of Scripture.
+            </p>
+            <a
+              href="https://givebutter.com/fms1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block mt-4 bg-white text-[#1e3a5f] font-semibold px-6 py-3 rounded-md hover:bg-blue-50 text-center w-fit"
+            >
+              Become a Monthly Partner →
+            </a>
+          </div>
+
+          <p className="text-gray-400 text-sm mt-6">
+            Prefer a one-time gift?{' '}
+            <a
+              href="https://givebutter.com/fms1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#1e3a5f] underline font-medium"
+            >
+              Give here →
+            </a>
+          </p>
         </div>
       </section>
     </div>

@@ -40,7 +40,7 @@ export default function SpeakingPage() {
           </div>
 
           <a
-            href="mailto:bill@faithmakessense.com"
+            href="mailto:info@faithmakessense.com"
             className="inline-block px-8 py-3 bg-blue-700 text-white font-sans font-medium text-sm uppercase tracking-wide hover:bg-blue-800 transition-colors duration-200"
           >
             Get in Touch

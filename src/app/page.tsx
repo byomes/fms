@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import HomeEmailSignup from '@/components/HomeEmailSignup'
 
 export const metadata: Metadata = {
   title: 'Home',
@@ -103,6 +104,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Email Signup */}
+      <HomeEmailSignup />
     </>
   )
 }

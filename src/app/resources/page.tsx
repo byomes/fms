@@ -1,5 +1,5 @@
-import Image from 'next/image'
 import type { Metadata } from 'next'
+import ResourceCard from '@/components/ResourceCard'
 
 export const metadata: Metadata = {
   title: 'Resources',
@@ -7,23 +7,129 @@ export const metadata: Metadata = {
     'Free apologetics resources. No signup required. Download, share, teach.',
 }
 
-const resources = [
-  { image: '/images/resource-1.png',  pdf: 'GODFIDENCE.pdf',                   title: 'GODFIDENCE' },
-  { image: '/images/resource-2.jpg',  pdf: 'Big Bible Story.pdf',               title: 'The Big Bible Story' },
-  { image: '/images/resource-3.jpg',  pdf: 'Bible Time Periods.pdf',            title: 'The Bible Timeline' },
-  { image: '/images/resource-4.jpg',  pdf: 'Bible Study Method.pdf',            title: 'Bible Study Method' },
-  { image: '/images/resource-5.jpg',  pdf: 'Worldviews Worksheet.pdf',          title: 'Worldviews Worksheet' },
-  { image: '/images/resource-6.jpg',  pdf: 'The Origin of the Universe.pdf',    title: 'The Origin of the Universe' },
-  { image: '/images/resource-7.png',  pdf: 'Age of the Earth.pdf',              title: 'The Age of the Earth' },
-  { image: '/images/resource-8.png',  pdf: 'The Fossil Record.pdf',             title: 'The Fossil Record' },
-  { image: '/images/resource-9.png',  pdf: 'Biological Evolution.pdf',          title: 'Biological Evolution' },
-  { image: '/images/resource-10.png', pdf: 'Human Evolution.pdf',               title: 'Human Evolution' },
-  { image: '/images/resource-11.jpg', pdf: 'The Pre-Flood World.pdf',           title: 'The Pre-Flood World' },
-  { image: '/images/resource-12.jpg', pdf: 'The Genesis Flood.pdf',             title: 'The Genesis Flood' },
-  { image: '/images/resource-13.jpg', pdf: 'Noah and the Corrupted World.pdf',  title: 'Noah and the Corrupted World' },
-  { image: '/images/resource-14.jpg', pdf: 'What About Dinosaurs.pdf',          title: 'What About Dinosaurs' },
-  { image: null,                       pdf: 'The Construction of the Ark.pdf',   title: "The Construction of Noah's Ark" },
-]
+const jesusResources = [
+  {
+    title: 'The Historical Jesus',
+    description: 'Did Jesus actually exist? Non-Christian sources settle the question.',
+    pdfPath: '/resources/The Historical Jesus.pdf',
+  },
+  {
+    title: 'The Divine Jesus',
+    description: 'Four times Jesus claimed to be God — and everyone in the room knew it.',
+    pdfPath: '/resources/The Divine Jesus.pdf',
+  },
+  {
+    title: 'Jesus the Promised Messiah',
+    description: 'Prophet, priest, and king — the one role only Jesus could fill.',
+    pdfPath: '/resources/The Promised Messiah.pdf',
+  },
+  {
+    title: 'Messianic Mystery',
+    description: 'Five independent streams of prophecy. One person in all of history.',
+    pdfPath: '/resources/Messianic Mystery.pdf',
+  },
+  {
+    title: 'Jesus the Miracle Worker',
+    description: 'Four categories of miracles that belong exclusively to God.',
+    pdfPath: '/resources/Jesus The Miracle Worker.pdf',
+  },
+  {
+    title: 'Jesus the Only Way',
+    description: 'Not an arbitrary rule — the shape of the problem demands the solution.',
+    pdfPath: '/resources/Jesus The Only Way.pdf',
+  },
+  {
+    title: 'The Case for Miracles',
+    description: 'Are miracles even possible? Answering the objections before they\'re asked.',
+    pdfPath: '/resources/The Case for Miracles.pdf',
+  },
+  {
+    title: 'Defending the Resurrection',
+    description: 'The minimal facts argument — built on evidence skeptics already accept.',
+    pdfPath: '/resources/Defending The Resurrection.pdf',
+  },
+] as const
+
+const originsResources = [
+  {
+    title: 'The Origin of the Universe',
+    description: 'What science and philosophy say about how it all began.',
+    pdfPath: '/resources/The Origin of the Universe.pdf',
+  },
+  {
+    title: 'The Age of the Earth',
+    description: 'Examining the evidence for the earth\'s age.',
+    pdfPath: '/resources/Age of the Earth.pdf',
+  },
+  {
+    title: 'The Fossil Record',
+    description: 'What the fossils actually show — and what they don\'t.',
+    pdfPath: '/resources/The Fossil Record.pdf',
+  },
+  {
+    title: 'Biological Evolution',
+    description: 'A clear-eyed look at the evidence for and against evolution.',
+    pdfPath: '/resources/Biological Evolution.pdf',
+  },
+  {
+    title: 'Human Evolution',
+    description: 'What the science says about human origins.',
+    pdfPath: '/resources/Human Evolution.pdf',
+  },
+  {
+    title: 'The Pre-Flood World',
+    description: 'Understanding the world before Noah\'s flood.',
+    pdfPath: '/resources/The Pre-Flood World.pdf',
+  },
+  {
+    title: 'The Genesis Flood',
+    description: 'The biblical and scientific case for a global flood.',
+    pdfPath: '/resources/The Genesis Flood.pdf',
+  },
+  {
+    title: 'Noah and the Corrupted World',
+    description: 'The theological context of Noah\'s story.',
+    pdfPath: '/resources/Noah and the Corrupted World.pdf',
+  },
+  {
+    title: 'What About Dinosaurs',
+    description: 'Dinosaurs, the Bible, and what Christians should know.',
+    pdfPath: '/resources/What About Dinosaurs.pdf',
+  },
+  {
+    title: "The Construction of Noah's Ark",
+    description: 'How the Ark was built and whether it was feasible.',
+    pdfPath: '/resources/The Construction of the Ark.pdf',
+  },
+] as const
+
+const foundationsResources = [
+  {
+    title: 'GODFIDENCE',
+    description: 'A practical guide to confident faith in God\'s existence.',
+    pdfPath: '/resources/GODFIDENCE.pdf',
+  },
+  {
+    title: 'The Big Bible Story',
+    description: 'The sweep of Scripture from creation to new creation.',
+    pdfPath: '/resources/Big Bible Story.pdf',
+  },
+  {
+    title: 'The Bible Timeline',
+    description: 'Key time periods of biblical history at a glance.',
+    pdfPath: '/resources/Bible Time Periods.pdf',
+  },
+  {
+    title: 'Bible Study Method',
+    description: 'A simple, repeatable method for personal Bible study.',
+    pdfPath: '/resources/Bible Study Method.pdf',
+  },
+  {
+    title: 'Worldviews Worksheet',
+    description: 'Map the major worldviews and how they answer life\'s big questions.',
+    pdfPath: '/resources/Worldviews Worksheet.pdf',
+  },
+] as const
 
 export default function ResourcesPage() {
   return (
@@ -39,42 +145,40 @@ export default function ResourcesPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {resources.map((resource) => (
-              <div
-                key={resource.pdf}
-                className="bg-white border border-gray-200 flex flex-col"
-              >
-                {resource.image ? (
-                  <div className="relative aspect-[3/4] w-full bg-gray-50 p-4">
-                    <Image
-                      src={resource.image}
-                      alt={resource.title}
-                      fill
-                      className="object-contain p-4"
-                    />
-                  </div>
-                ) : (
-                  <div className="aspect-[3/4] w-full bg-gray-100 flex items-center justify-center p-8">
-                    <p className="font-display text-2xl uppercase tracking-wider text-blue-900 text-center">
-                      {resource.title}
-                    </p>
-                  </div>
-                )}
-                <div className="p-5 flex flex-col flex-1 gap-4">
-                  <h2 className="font-sans font-medium text-blue-900 text-base leading-tight">
-                    {resource.title}
-                  </h2>
-                  <a
-                    href={`/resources/${resource.pdf}`}
-                    download
-                    className="mt-auto inline-block text-center px-6 py-2 bg-blue-700 text-white font-sans font-medium text-sm uppercase tracking-wide hover:bg-blue-800 transition-colors duration-200"
-                  >
-                    Download
-                  </a>
-                </div>
-              </div>
-            ))}
+          {/* About Jesus */}
+          <div className="mb-16">
+            <h2 className="text-sm font-bold uppercase tracking-widest mb-6 text-[#1e3a5f]">
+              About Jesus
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {jesusResources.map(r => (
+                <ResourceCard key={r.pdfPath} {...r} category="jesus" />
+              ))}
+            </div>
+          </div>
+
+          {/* Science & Origins */}
+          <div className="mb-16">
+            <h2 className="text-sm font-bold uppercase tracking-widest mb-6 text-[#1a3d2b]">
+              Science &amp; Origins
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {originsResources.map(r => (
+                <ResourceCard key={r.pdfPath} {...r} category="origins" />
+              ))}
+            </div>
+          </div>
+
+          {/* Bible Foundations */}
+          <div className="mb-16">
+            <h2 className="text-sm font-bold uppercase tracking-widest mb-6 text-[#5c1a1a]">
+              Bible Foundations
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {foundationsResources.map(r => (
+                <ResourceCard key={r.pdfPath} {...r} category="foundations" />
+              ))}
+            </div>
           </div>
         </div>
       </section>
