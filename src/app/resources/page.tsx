@@ -147,9 +147,11 @@ export default function ResourcesPage() {
 
           {/* About Jesus */}
           <div className="mb-16">
-            <h2 className="text-sm font-bold uppercase tracking-widest mb-6 text-[#1e3a5f]">
-              About Jesus
-            </h2>
+            <div className="bg-[#1e3a5f] py-3 px-4 rounded-md mb-6">
+              <h2 className="text-sm font-bold uppercase tracking-widest text-white">
+                About Jesus
+              </h2>
+            </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {jesusResources.map(r => (
                 <ResourceCard key={r.pdfPath} {...r} category="jesus" />
@@ -159,9 +161,11 @@ export default function ResourcesPage() {
 
           {/* Science & Origins */}
           <div className="mb-16">
-            <h2 className="text-sm font-bold uppercase tracking-widest mb-6 text-[#1a3d2b]">
-              Science &amp; Origins
-            </h2>
+            <div className="bg-[#1a3d2b] py-3 px-4 rounded-md mb-6">
+              <h2 className="text-sm font-bold uppercase tracking-widest text-white">
+                Science &amp; Origins
+              </h2>
+            </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {originsResources.map(r => (
                 <ResourceCard key={r.pdfPath} {...r} category="origins" />
@@ -171,9 +175,11 @@ export default function ResourcesPage() {
 
           {/* Bible Foundations */}
           <div className="mb-16">
-            <h2 className="text-sm font-bold uppercase tracking-widest mb-6 text-[#5c1a1a]">
-              Bible Foundations
-            </h2>
+            <div className="bg-[#5c1a1a] py-3 px-4 rounded-md mb-6">
+              <h2 className="text-sm font-bold uppercase tracking-widest text-white">
+                Bible Foundations
+              </h2>
+            </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {foundationsResources.map(r => (
                 <ResourceCard key={r.pdfPath} {...r} category="foundations" />
