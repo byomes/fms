@@ -147,7 +147,7 @@ export default function ResourcesPage() {
 
           {/* About Jesus */}
           <div className="mb-16">
-            <div className="bg-[#1e3a5f] py-3 px-4 rounded-md mb-6">
+            <div className="py-3 px-4 rounded-md mb-6" style={{ backgroundColor: '#1e3a5f' }}>
               <h2 className="text-sm font-bold uppercase tracking-widest text-white">
                 About Jesus
               </h2>
@@ -161,7 +161,7 @@ export default function ResourcesPage() {
 
           {/* Science & Origins */}
           <div className="mb-16">
-            <div className="bg-[#1a3d2b] py-3 px-4 rounded-md mb-6">
+            <div className="py-3 px-4 rounded-md mb-6" style={{ backgroundColor: '#1a3d2b' }}>
               <h2 className="text-sm font-bold uppercase tracking-widest text-white">
                 Science &amp; Origins
               </h2>
@@ -175,7 +175,7 @@ export default function ResourcesPage() {
 
           {/* Bible Foundations */}
           <div className="mb-16">
-            <div className="bg-[#5c1a1a] py-3 px-4 rounded-md mb-6">
+            <div className="py-3 px-4 rounded-md mb-6" style={{ backgroundColor: '#5c1a1a' }}>
               <h2 className="text-sm font-bold uppercase tracking-widest text-white">
                 Bible Foundations
               </h2>
