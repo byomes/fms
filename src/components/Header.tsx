@@ -31,10 +31,10 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-gray-200 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-white/10 ${
         scrolled || mobileOpen
-          ? 'bg-white/95 backdrop-blur-sm shadow-sm'
-          : 'bg-white'
+          ? 'bg-[#1e3a5f]/95 backdrop-blur-sm shadow-sm'
+          : 'bg-[#1e3a5f]'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -57,7 +57,7 @@ export default function Header() {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm tracking-wide text-gray-600 hover:text-blue-900 transition-colors duration-200"
+                  className="text-sm tracking-wide text-white/70 hover:text-white transition-colors duration-200"
                 >
                   {link.label}
                 </a>
@@ -67,8 +67,8 @@ export default function Header() {
                   href={link.href}
                   className={`text-sm tracking-wide transition-colors duration-200 ${
                     pathname === link.href
-                      ? 'text-blue-700'
-                      : 'text-gray-600 hover:text-blue-900'
+                      ? 'text-white'
+                      : 'text-white/70 hover:text-white'
                   }`}
                 >
                   {link.label}
@@ -79,7 +79,7 @@ export default function Header() {
 
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="lg:hidden p-2 text-blue-900"
+            className="lg:hidden p-2 text-white"
             aria-label="Toggle menu"
           >
             <div className="w-6 flex flex-col gap-1.5">
@@ -103,7 +103,7 @@ export default function Header() {
         </div>
 
         {mobileOpen && (
-          <nav className="lg:hidden pb-6 flex flex-col gap-1 border-t border-gray-200 pt-4">
+          <nav className="lg:hidden pb-6 flex flex-col gap-1 border-t border-white/10 pt-4">
             {navLinks.map(link => (
               link.external ? (
                 <a
@@ -111,7 +111,7 @@ export default function Header() {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-base py-2 text-gray-600 hover:text-blue-900 transition-colors duration-200"
+                  className="text-base py-2 text-white/70 hover:text-white transition-colors duration-200"
                 >
                   {link.label}
                 </a>
@@ -121,8 +121,8 @@ export default function Header() {
                   href={link.href}
                   className={`text-base py-2 transition-colors duration-200 ${
                     pathname === link.href
-                      ? 'text-blue-700'
-                      : 'text-gray-600 hover:text-blue-900'
+                      ? 'text-white'
+                      : 'text-white/70 hover:text-white'
                   }`}
                 >
                   {link.label}
