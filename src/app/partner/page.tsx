@@ -3,13 +3,13 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Partner',
   description:
-    'Support Faith Makes Sense. Free resources, Adelphos Academy, and pastor training in Uganda — all funded by partners.',
+    'Support Faith Makes Sense. Free resources, Adelphos Academy, and pastor training in Uganda, all funded by partners.',
 }
 
 const pillars = [
   {
     title: 'Free Resources',
-    body: 'Apologetics tools for anyone who downloads them. No paywall, no email required — just free, accessible content for Christians who want to be equipped.',
+    body: 'Apologetics tools for anyone who downloads them. No paywall, no email required. Just free, accessible content for Christians who want to be equipped.',
   },
   {
     title: 'Adelphos Academy',
@@ -58,7 +58,7 @@ export default function PartnerPage() {
             Become a Monthly Partner
           </h2>
           <p className="text-gray-600 mt-2 max-w-xl">
-            Monthly partners make the mission sustainable. Every recurring gift — regardless of size — keeps the library free, the courses running, and the training materials flowing to pastors in Uganda.
+            Monthly partners make the mission sustainable. Every recurring gift, regardless of size, keeps the library free, the courses running, and the training materials flowing to pastors in Uganda.
           </p>
 
           <div className="bg-[#1e3a5f] rounded-xl p-6 mt-6 max-w-xl">
@@ -69,7 +69,7 @@ export default function PartnerPage() {
               Receive a signed copy of Dr. Bill&apos;s upcoming book, The Wrong Jesus.
             </h3>
             <p className="text-white/80 text-sm mt-2">
-              Every new monthly partner receives a personally signed copy of Dr. Bill&apos;s book — a clear, compelling case for the real Jesus of Scripture.
+              Every new monthly partner receives a personally signed copy of Dr. Bill&apos;s book, a clear, compelling case for the real Jesus of Scripture.
             </p>
             <a
               href="https://givebutter.com/fms1"

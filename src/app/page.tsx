@@ -89,7 +89,7 @@ export default function HomePage() {
                 Adelphos Academy
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-8">
-                Online apologetics training — self-paced, accessible, and always free at the Essentials tier.
+                Online apologetics training. Self-paced, accessible, and always free at the Essentials tier.
               </p>
               <a
                 href="https://adelphosacademy.com"

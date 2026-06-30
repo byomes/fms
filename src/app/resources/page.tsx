@@ -15,12 +15,12 @@ const jesusResources = [
   },
   {
     title: 'The Divine Jesus',
-    description: 'Four times Jesus claimed to be God — and everyone in the room knew it.',
+    description: 'Four times Jesus claimed to be God, and everyone in the room knew it.',
     pdfPath: '/resources/The Divine Jesus.pdf',
   },
   {
     title: 'Jesus the Promised Messiah',
-    description: 'Prophet, priest, and king — the one role only Jesus could fill.',
+    description: 'Prophet, priest, and king: the one role only Jesus could fill.',
     pdfPath: '/resources/The Promised Messiah.pdf',
   },
   {
@@ -35,7 +35,7 @@ const jesusResources = [
   },
   {
     title: 'Jesus the Only Way',
-    description: 'Not an arbitrary rule — the shape of the problem demands the solution.',
+    description: 'Not an arbitrary rule. The shape of the problem demands the solution.',
     pdfPath: '/resources/Jesus The Only Way.pdf',
   },
   {
@@ -45,7 +45,7 @@ const jesusResources = [
   },
   {
     title: 'Defending the Resurrection',
-    description: 'The minimal facts argument — built on evidence skeptics already accept.',
+    description: 'The minimal facts argument, built on evidence skeptics already accept.',
     pdfPath: '/resources/Defending The Resurrection.pdf',
   },
 ] as const
@@ -63,7 +63,7 @@ const originsResources = [
   },
   {
     title: 'The Fossil Record',
-    description: 'What the fossils actually show — and what they don\'t.',
+    description: 'What the fossils actually show, and what they don\'t.',
     pdfPath: '/resources/The Fossil Record.pdf',
   },
   {

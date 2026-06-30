@@ -28,7 +28,7 @@ export default function AboutPage() {
                 About
               </h1>
               <blockquote className="text-gray-600 text-lg leading-relaxed border-l-2 border-blue-700 pl-6 mb-8 italic">
-                &ldquo;I didn&apos;t set out to be an apologist. I set out to follow Jesus — and I kept running into questions that demanded answers. Not just for me, but for the people I was trying to reach.&rdquo;
+                &ldquo;I didn&apos;t set out to be an apologist. I set out to follow Jesus, and I kept running into questions that demanded answers. Not just for me, but for the people I was trying to reach.&rdquo;
               </blockquote>
             </div>
           </div>
@@ -44,7 +44,7 @@ export default function AboutPage() {
                 Why This Exists
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed">
-                Faith shouldn&apos;t feel fragile. Too many Christians lack the tools to engage honest questions. Faith Makes Sense exists to change that — providing free, accessible apologetics resources for everyday believers and the churches that disciple them.
+                Faith shouldn&apos;t feel fragile. Too many Christians lack the tools to engage honest questions. Faith Makes Sense exists to change that, providing free, accessible apologetics resources for everyday believers and the churches that disciple them.
               </p>
             </div>
 
@@ -53,7 +53,7 @@ export default function AboutPage() {
                 The Ministry
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed">
-                Faith Makes Sense produces free apologetics resources available to anyone who downloads them. Through Adelphos Academy, we develop online courses — including an Essentials tier that will always be free. We also support pastor training for church leaders in Uganda, delivering training materials via web-deployed resources.
+                Faith Makes Sense produces free apologetics resources available to anyone who downloads them. Through Adelphos Academy, we develop online courses, including an Essentials tier that will always be free. We also support pastor training for church leaders in Uganda, delivering training materials via web-deployed resources.
               </p>
             </div>
 
@@ -68,7 +68,7 @@ export default function AboutPage() {
                 He holds a Master&apos;s Degree in Apologetics from Luther Rice College and Seminary and a Doctor of Ministry in Theology and Apologetics from Liberty University. Through Faith Makes Sense he oversees Adelphos Academy, an online theological education platform, and provides training to a pastor training network in Uganda.
               </p>
               <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                He writes theology for the church — including He Is Risen and the forthcoming The Wrong Jesus — and children&apos;s fantasy fiction for his family through the Dreamstone Chronicles series.
+                He writes theology for the church, including He Is Risen and the forthcoming The Wrong Jesus, and children&apos;s fantasy fiction for his family through the Dreamstone Chronicles series.
               </p>
               <p className="text-gray-600 text-lg leading-relaxed">
                 He and his wife Melanie share an ever-growing family. He is also a daydreamer, guitar player, and lifelong ice cream superfan.
