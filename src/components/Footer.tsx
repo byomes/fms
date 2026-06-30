@@ -1,7 +1,4 @@
-'use client'
-
 import Link from 'next/link'
-import { useState } from 'react'
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -12,65 +9,9 @@ const navLinks = [
   { href: '/partner', label: 'Partner' },
 ]
 
-function FooterSignup() {
-  const [email, setEmail] = useState('')
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
-
-  async function handleSubmit(e: React.FormEvent) {
-    e.preventDefault()
-    setStatus('loading')
-    try {
-      const res = await fetch('https://watson.tail0243ff.ts.net/api/kit/subscribe', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, tag: 'fms' }),
-      })
-      if (!res.ok) throw new Error()
-      setStatus('success')
-    } catch {
-      setStatus('error')
-    }
-  }
-
-  return (
-    <div className="bg-[#1e3a5f] py-6 px-6">
-      <div className="max-w-7xl mx-auto">
-        {status === 'success' ? (
-          <p className="text-white text-sm text-center">✓ You&apos;re subscribed.</p>
-        ) : (
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-            <p className="text-white text-sm">Get free apologetics resources in your inbox.</p>
-            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2 w-full sm:w-auto">
-              <input
-                type="email"
-                value={email}
-                onChange={e => setEmail(e.target.value)}
-                placeholder="Email address"
-                required
-                className="bg-white/10 border border-white/30 text-white placeholder-white/50 px-4 py-2 rounded-md text-sm focus:outline-none focus:ring-1 focus:ring-white w-full sm:w-64"
-              />
-              <button
-                type="submit"
-                disabled={status === 'loading'}
-                className="bg-white text-[#1e3a5f] font-semibold px-4 py-2 rounded-md text-sm hover:bg-blue-50 sm:ml-2 disabled:opacity-60"
-              >
-                {status === 'loading' ? 'Subscribing…' : 'Subscribe'}
-              </button>
-            </form>
-          </div>
-        )}
-        {status === 'error' && (
-          <p className="text-white/70 text-xs mt-2">Something went wrong.</p>
-        )}
-      </div>
-    </div>
-  )
-}
-
 export default function Footer() {
   return (
     <footer className="bg-blue-950 border-t border-blue-800">
-      <FooterSignup />
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
         <div className="flex flex-col items-center gap-6">
           <p className="font-display text-xl uppercase tracking-widest text-white">
