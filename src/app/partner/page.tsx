@@ -69,7 +69,7 @@ export default function PartnerPage() {
               Receive a signed copy of Dr. Bill&apos;s upcoming book, The Wrong Jesus.
             </h3>
             <p className="text-white/80 text-sm mt-2">
-              Every new monthly partner receives a personally signed copy of Dr. Bill Yomes&apos;s book — a clear, compelling case for the real Jesus of Scripture.
+              Every new monthly partner receives a personally signed copy of Dr. Bill&apos;s book — a clear, compelling case for the real Jesus of Scripture.
             </p>
             <a
               href="https://givebutter.com/fms1"
