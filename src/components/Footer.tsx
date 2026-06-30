@@ -39,7 +39,7 @@ function FooterSignup() {
           <p className="text-white text-sm text-center">✓ You&apos;re subscribed.</p>
         ) : (
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-            <p className="text-white text-sm">Get free apologetics resources in your inbox.</p>
+            <p className="text-white text-sm">Get free resources and ministry updates in your inbox.</p>
             <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2 w-full sm:w-auto">
               <input
                 type="email"
