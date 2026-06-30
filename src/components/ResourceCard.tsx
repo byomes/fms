@@ -39,7 +39,8 @@ export default function ResourceCard({ title, description, pdfPath, category }: 
           href={pdfPath}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-[#1e3a5f] text-white text-xs font-semibold px-3 py-1.5 rounded-md hover:bg-[#16304f] transition-colors ml-3 whitespace-nowrap flex-shrink-0"
+          className="text-white text-xs font-semibold px-3 py-1.5 rounded-md hover:opacity-90 transition-colors ml-3 whitespace-nowrap flex-shrink-0"
+          style={{ backgroundColor: bg }}
         >
           Download →
         </a>
