@@ -80,18 +80,6 @@ export default function PartnerPage() {
               Become a Monthly Partner →
             </a>
           </div>
-
-          <p className="text-gray-400 text-sm mt-6">
-            Prefer a one-time gift?{' '}
-            <a
-              href="https://givebutter.com/fms1"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#1e3a5f] underline font-medium"
-            >
-              Give here →
-            </a>
-          </p>
         </div>
       </section>
     </div>
