@@ -23,7 +23,7 @@ export default function HomeEmailSignup() {
   }
 
   return (
-    <section className="bg-[#1e3a5f] py-16 px-6">
+    <section className="hidden lg:block bg-[#1e3a5f] py-16 px-6">
       <div className="max-w-xl mx-auto text-center">
         <h2 className="text-white font-bold text-2xl">Stay Equipped</h2>
         <p className="text-white/70 text-base mt-2">

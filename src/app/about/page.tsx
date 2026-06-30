@@ -62,7 +62,7 @@ export default function AboutPage() {
                 About Dr. Bill
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                William CK Yomes is a pastor, apologist, and author based in Wilmington, Delaware. He serves as Senior Pastor of Catalyst Community Church and is the founding apologist of Faith Makes Sense, a nonprofit providing free apologetics and theological education for pastors, leaders, and believers around the world.
+                Dr. Bill is a pastor, apologist, and author based in Wilmington, Delaware. He serves as Senior Pastor of Catalyst Community Church and is the founding apologist of Faith Makes Sense, a nonprofit providing free apologetics and theological education for pastors, leaders, and believers around the world.
               </p>
               <p className="text-gray-600 text-lg leading-relaxed mb-6">
                 He holds a Master&apos;s Degree in Apologetics from Luther Rice College and Seminary and a Doctor of Ministry in Theology and Apologetics from Liberty University. Through Faith Makes Sense he oversees Adelphos Academy, an online theological education platform, and provides training to a pastor training network in Uganda.

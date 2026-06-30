@@ -34,12 +34,12 @@ export default function ResourceCard({ title, description, pdfPath, category }: 
         </p>
       </div>
       <div className="bg-white py-2 px-4 flex items-center justify-between">
-        <span className="text-gray-600 text-xs">{description}</span>
+        <span className="text-gray-600 text-sm">{description}</span>
         <a
           href={pdfPath}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-[#1e3a5f] text-xs font-semibold hover:underline ml-3 whitespace-nowrap"
+          className="bg-[#1e3a5f] text-white text-xs font-semibold px-3 py-1.5 rounded-md hover:bg-[#16304f] transition-colors ml-3 whitespace-nowrap flex-shrink-0"
         >
           Download →
         </a>

@@ -22,7 +22,7 @@ export default function SpeakingPage() {
             Book Dr. Bill to Speak
           </h1>
           <p className="text-gray-600 text-lg mb-12">
-            Available for churches, conferences, apologetics events, and pastor training.
+            Available for churches, conferences, and apologetics events.
           </p>
 
           <div className="mb-12">

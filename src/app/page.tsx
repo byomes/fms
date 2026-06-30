@@ -41,7 +41,7 @@ export default function HomePage() {
       </section>
 
       {/* GODFIDENCE Feature */}
-      <section className="bg-gray-50 py-20 lg:py-28">
+      <section className="bg-gray-100 py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div className="flex justify-center">
